@@ -8,7 +8,7 @@ app.use(express.static('./dist/usajili'));
 
 app.get('/*', function(req,res) {
     
-res.sendFile(path.join('./dist/usajili/index.html'));
+res.sendFile(path.join(__dirname + './dist/usajili/index.html'));
 });
 
 // Start the app by listening on the default Heroku port
